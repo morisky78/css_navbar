@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vertical Navbar Menu</title>
+  </head>
+  <body>
+    <div class="container">
+        <a href="#" class="toggleBox">
+            <span class="icon"></span>
+        </a>
+        <ul class="navItems">
+            <li><a href="">
+                <i class="fa fa-home" style="--i:1"></i>
+                <span style="--g:1">home</span>
+            </a></li>
+            <li><a href="">
+                <i class="fa fa-user" style="--i:2"></i>
+                <span style="--g:2">about</span>
+            </a></li>
+            <li><a href="">
+                <i class="fa fa-folder" style="--i:3"></i>
+                <span style="--g:3">portfolio</span>
+            </a></li>
+            <li><a href="">
+                <i class="fa fa-message" style="--i:4"></i>
+                <span style="--g:4">chat</span>
+            </a></li>
+            <li><a href="">
+                <i class="fa fa-globe" style="--i:5"></i>
+                <span style="--g:5">blog</span>
+            </a></li>
+        </ul>
+    </div>
+    <script>
+        var toggleClick = document.querySelector(".toggleBox");
+        var container = document.querySelector(".container");
+        toggleClick.addEventListener('click', ()=> {
+            toggleClick.classList.toggle('active');
+            container.classList.toggle('active');
+        })
+        </script>
+  </body>
+  </html>
